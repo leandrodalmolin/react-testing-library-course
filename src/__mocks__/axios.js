@@ -17,7 +17,19 @@ const mockResponse = {
                     large: "https://randomuser.me/api/portraits/men/41.jpg"
                 },
                 login: {
-                    username: "ThePhonyGOAT"
+                    username: "silvermouse594"
+                }
+            },
+            {
+                name: {
+                    first: "Millie",
+                    last: "Clarke"
+                },
+                picture: {
+                    large: "https://randomuser.me/api/portraits/women/52.jpg"
+                },
+                login: {
+                    username: "crazywolf867"
                 }
             }
         ]
