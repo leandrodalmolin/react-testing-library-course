@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Header from '../Header';
 
+describe("Header", () => {
 /**
  * Queries accessible by everyone like:
  * 
@@ -79,3 +80,4 @@ it('should render same text passed into title prop', () => {
 //   const headingElement = screen.getByTestId("header-1");
 //   expect(headingElement).toBeInTheDocument();
 // });
+})
