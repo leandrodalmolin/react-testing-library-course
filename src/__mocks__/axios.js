@@ -1,0 +1,30 @@
+/**
+ * Folder and filename are important when mocking requests for testing
+ * 
+ * E.g.: If we want to mock the "axios.get(url)" request,
+ *       filename should be "axios.js", exporting an object
+ *       with the "get" key. See below.
+ */
+const mockResponse = {
+    data: {
+        results: [
+            {
+                name: {
+                    first: "John",
+                    last: "Doe"
+                },
+                picture: {
+                    large: "https://randomuser.me/api/portraits/men/41.jpg"
+                },
+                login: {
+                    username: "ThePhonyGOAT"
+                }
+            }
+        ]
+    }
+}
+
+const mockedAxios = {
+    get: jest.fn().mockResolvedValue(mockResponse)
+}
+export default mockedAxios;
