@@ -35,6 +35,8 @@ function TodoList({
                             <div 
                                 className={`todo-item ${todo.completed && "todo-item-active"}`} 
                                 onClick={() => updateTask(todo.id)}
+                                key={index} // study purposes only
+                                data-testid="task-container"
                             >
                                 {todo.task}
                             </div>
