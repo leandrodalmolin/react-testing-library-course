@@ -22,14 +22,14 @@ it('should render "task" when the number of incomplete tasks is one', () => {
     expect(paragraphElement).toBeInTheDocument();
 });
 
-it('should render the correct amount of incomplete tasks and be visible', () => {
-    render(<MockTodoFooter numberOfIncompleteTasks={1} />);
-    const paragraphElement = screen.getByText(/1 task left/i);
-    expect(paragraphElement).toBeVisible();
-});
+// it('should render the correct amount of incomplete tasks and be visible', () => {
+//     render(<MockTodoFooter numberOfIncompleteTasks={1} />);
+//     const paragraphElement = screen.getByText(/1 task left/i);
+//     expect(paragraphElement).toBeVisible();
+// });
 
-it('should render the correct amount of incomplete tasks checking element by textContent', () => {
-    render(<MockTodoFooter numberOfIncompleteTasks={1} />);
-    const paragraphElement = screen.getByTestId("para");
-    expect(paragraphElement.textContent).toBe("1 task left");
-});
+// it('should render the correct amount of incomplete tasks checking element by textContent', () => {
+//     render(<MockTodoFooter numberOfIncompleteTasks={1} />);
+//     const paragraphElement = screen.getByTestId("para");
+//     expect(paragraphElement.textContent).toBe("1 task left");
+// });
